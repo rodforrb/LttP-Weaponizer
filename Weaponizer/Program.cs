@@ -169,7 +169,7 @@ namespace Weaponizer
              */
 
 
-            // these are things we don't want to set to use damage class 1, which may be volatile
+            // these are things we don't want to set to use damage class 1, which may be volatile. unknowns are mostly environmental objects
             int[] normalDmgExceptions = new int[]
             {
                 3, 4, 5, 6, 7, // switches and stuff
@@ -250,7 +250,7 @@ namespace Weaponizer
                 214, 215 // ganon
             };
 
-            // we want bosses to take damage class 2 (well, I want them to)
+            // we want bosses to take damage class 2
             int[] bosses = new int[]
             {
                 83, // armos
@@ -326,7 +326,7 @@ namespace Weaponizer
         }
 
         /* make a brand new damage table
-         * @return byte[128] a new damage table
+         * @return byte[128] new damage table
          */
         static byte[] Create_Damage_Table()
         {
@@ -390,7 +390,7 @@ namespace Weaponizer
             // create nice table to be returned
             byte[] table = new byte[128];
 
-            // reused loop thangs
+            // reused iterators
             byte dmgType;        // selected damage type for weapon class
             int pool1_index = 0; // the pools are made of interspersed weapon types,
             int pool2_index = 0; //    so the counters must move separately

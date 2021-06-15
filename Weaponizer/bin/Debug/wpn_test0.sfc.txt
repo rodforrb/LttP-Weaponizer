@@ -1,0 +1,18 @@
+Boomerang: Incinerate
+Level 1: Medium Stun
+Level 2: 2
+Level 3: Incinerate
+Level 4: Slime Effect
+Level 5: 4
+Bow: Slime Effect
+Hookshot: 2
+Bombs: 8
+Silvers: 4
+Powder: 2
+Fire Rod: Short Stun
+Ice Rod: Long Stun
+Bombos: 8
+Ether: Short Stun
+Quake: Freeze
+Fairy prize: Heart
+Bomb timers: 96, 24 15 15 15 15 15 24 24 24 24 
