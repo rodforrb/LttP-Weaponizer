@@ -21,7 +21,7 @@ namespace Weaponizer
                 Console.WriteLine("Enter the seed name too.");
                 return;
             }
-            //todo better (or any lol) file checking
+            //todo better file checking
             string fileName = args[0];
             // fix file directory stuff
             fileName = fileName.TrimStart(new Char[] { '.', '\\', '/' });
@@ -100,7 +100,7 @@ namespace Weaponizer
             spoiler += "Fairy prize: " + HexToText(data[fairy_address]) + "\r\n";
 
 
-            // randomize bomb timers lol
+            // randomize bomb timers
             int bomb_timer_address = 0x41543;
             // write fuse timer to ROM, first byte - 40-255, needs to be 40+ to hit TT bomb attic
             data[bomb_timer_address] = (byte)(rnd.Next(215) + 0x40);
@@ -139,7 +139,7 @@ namespace Weaponizer
             }
 
 
-            // fileout thangs
+            // fileouts
             // spoiler log
             File.WriteAllText("wpn_" + fileName + ".txt", spoiler);
             // ROM file
